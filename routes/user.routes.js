@@ -6,14 +6,11 @@ import { getUser, getUsers } from '../controllers/user.controller.js';
 
 const userRouter = Router();
 
-
+// Get all users from db
 userRouter.get('/', getUsers);
 
-
+// Get a User based on their "id"
 userRouter.get('/:id', authorize, getUser);
-
-
-userRouter.post('/', (req, res) => res.send({title: 'CREATE a new user'}));
 
 
 userRouter.put('/:id', (req, res) => res.send({title: 'UPDATE a user'}));

@@ -15,6 +15,7 @@ export const signUp = async (req, res, next) => {
 
         // check if existing User
         const existingUser = await User.findOne({ email });
+        
 
         if (existingUser){
             const error = new Error('User already exists');
@@ -66,7 +67,7 @@ export const signIn = async (req, res, next) => {
     try {
         const { email, password } = req.body;
 
-        const user = await User.findOne({ email});
+        const user = await User.findOne({ email });
 
         // If email does not exist:
         if(!user){
@@ -108,7 +109,6 @@ export const signIn = async (req, res, next) => {
 
 // --- SinOut Logic
 export const signOut = async (req, res, next) => {
-
     // signOut logic
 
 };
