@@ -30,6 +30,8 @@ Building a monolithic backend subscription tracker API implementing features lik
 
 ## 🕸️ Snippets
 
+<br>
+
 ![Successful SignUp](./public/signUp%20success.png)
 
 <br>
